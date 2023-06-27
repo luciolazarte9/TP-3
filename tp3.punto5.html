@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Ejercicio 5</title>
+	</head>
+	<body>
+
+		<form>	
+		
+			<label>Nombre completo:</label>
+			<br>
+				<label for="nombre"></label>
+				<input type="text" id="nombre" placeholder="Nombre:" required>
+			<br>
+				<label for="apellido"></label>
+				<input type="text" id="apellido" placeholder="Apellido:" required>
+			<br><br>
+				
+			<span>Sexo:</span>
+			<br>
+				<input type="radio" name="sexo" id="hombre"  value="hombre" required>
+				<label for="hombre">Hombre</label>
+				<br>
+				<input type="radio" name="sexo" id="mujer"  value="mujer" required>
+				<label for="mujer">Mujer</label>
+			<br><br>
+		
+			<label>Edad:</label>
+			<br>
+				<input type="radio" name="edad" value="0-15" id="edad-0-15" required>
+				<label for="edad-0-15">0-15</label>
+				<input type="radio" name="edad" value="15-23" id="edad-15-23" required>
+				<label for="edad-15-23">15-23</label>
+				<input type="radio" name="edad" value="23-35" id="edad-23-35" required>
+				<label for="edad-15-23">23-35</label>
+			<br>
+				<input type="radio" name="edad" value="35-60" id="edad-35-60" required>
+				<label for="edad-35-60">35-60</label>
+				<input type="radio" name="edad" value=">60" id="edad->60" required>
+				<label for="edad->60">>60</label>
+				<input type="radio" name="edad" value=">65" id="edad->65" required>
+				<label for="edad-15-23">>65</label>
+			<br><br>
+
+			<button type="button" onclick="verificar()">Verificar</button>
+
+		</form>	
+
+		<div id="resultado"></div>
+
+		<script src="./js/js-5.js"></script>
+	</body>
+</html>
